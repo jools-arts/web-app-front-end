@@ -42,5 +42,3 @@
 
     dataForm.addEventListener('submit', handleFormSubmission);
 })();
-
-making sure everything is committed
