@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriassicPark</title>
+</head>
+<body>
+
+    <header>
+        <h1>Triassic Park</h1>
+        <p>Welcome to Triassic Park!</p>
+        <p>A platform for documenting, sharing, and comparing dinosaur discoveries from around the world</p>
+    </header>
+
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link" href="#">HOME</a>
+        <a class="nav-link" href="./html/create.html">CREATE</a>
+        <a class="nav-link" href="./html/read.html">READ</a>
+        <a class="nav-link" href="./html/update.html">UPDATE</a>
+        <a class="nav-link" href="./html/delete.html">DELETE</a>
+    </nav>
+
+    <header>
+        <h1>Create a Paleontologist</h1>
+    </header>
+
+    <div class="container">
+        <section id="banner" class="container">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <main class="container">
+            <div id="data-table">
+    
+            </div>
+            <h2>Create a paleontologist</h2>
+            
+            <form id="data-form" class="container">
+         
+                <fieldset id="general-info">
+                    <legend>General information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br>
+
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">phone:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+
+                    <label for="website">website:</label>
+                    <input type="text" id="website" name="website"><br>
+                </fieldset>
+
+                <fieldset id="address-details">
+                    <legend>Address details</legend>
+
+                    <label for="street">street:</label>
+                    <input type="text" id="street" name="street"><br>
+
+                    <label for="city">city:</label>
+                    <input type="text" id="city" name="city"><br>
+
+                    <label for="suite">suite:</label>
+                    <input type="text" id="suite" name="suite"><br>
+
+                    <label for="zipcode">zipcode:</label>
+                    <input type="text" id="zipcode" name="zipcode"><br>
+
+                    <label for="geo-lat">geo-latitude:</label>
+                    <input type="text" id="geo-lat" name="lat"><br>
+
+                    <label for="geo-long">geo-longitude:</label>
+                    <input type="text" id="geo-long" name="lng"><br>
+                </fieldset>
+                
+                <fieldset id="company-details">
+                    <legend>Company details</legend>
+
+                    <label for="company-name">company name:</label>
+                    <input type="text" id="company-name" name="company-name"><br>
+
+                    <label for="bs">bs:</label>
+                    <input type="text" id="bs" name="bs"><br>
+
+                    <label for="catchPhrase">Catch phrase:</label>
+                    <input type="text" id="catch-phrase" name="catch-phrase"><br>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./JavaScript/navbar.js"></script>
+
+</body>
+</html>
