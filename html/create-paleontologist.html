@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriassicPark</title>
+</head>
+<body>
+
+    <header>
+        <h1>Triassic Park</h1>
+        <p>Welcome to Triassic Park!</p>
+        <p>A platform for documenting, sharing, and comparing dinosaur discoveries from around the world</p>
+    </header>
+
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link" href="../index.html">HOME</a>
+        <a class="nav-link" href="#">CREATE</a>
+        <a class="nav-link" href="./html/read-paleontologist.html">READ</a>
+        <a class="nav-link" href="./html/update-paleontologist.html">UPDATE</a>
+        <a class="nav-link" href="./html/delete-paleontologist.html">DELETE</a>
+    </nav>
+
+    <header>
+        <h1>Create a Paleontologist</h1>
+    </header>
+
+    <div class="container">
+        <section id="banner" class="container">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <main class="container">
+            <div id="data-table">
+    
+            </div>
+            <h2>Create a paleontologist</h2>
+            
+            <form id="data-form" class="container">
+         
+                <fieldset id="paleontologist-info">
+                    <legend>Paleontologist Information</legend>
+
+                    <label for="forename">Name:</label>
+                    <input type="text" id="forename" name="forename"><br>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname"><br>
+
+                    <label for="emailaddress">EmailAddress:</label>
+                    <input type="emailaddress" id="emailaddress" name="emailaddress"><br>
+
+                    <label for="specialism">Specialism:</label>
+                    <input type="specialsim" id="specialism" name="specialism"><br>
+
+                    <label for="institution">Institution:</label>
+                    <input type="institution" id="institution" name="institution"><br>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./javascript/navbar.js"></script>
+    <script src="./javascript/paleontologist.js"></script>
+    <script src="./javascript/create-paleontologist.js"></script>
+
+</body>
+</html>
