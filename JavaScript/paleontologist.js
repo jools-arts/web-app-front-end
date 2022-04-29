@@ -10,8 +10,8 @@ function Paleontologist(forename, surname, username, email_address, specialism, 
 
 const paleontologistHeaders = ['paleontologist_id', 'forename', 'surname', 'username', 'email_address', 'institution', 'specialism'];
 
-function renderUserTable(users, containerElement) {
+function renderPaleontologistTable(paleontologists, containerElement) {
     const tableManager = new TableManager();
-    const table = tableManager.createTable(userHeaders, users);
+    const table = tableManager.createTable(paleontologistHeaders, Paleontologist);
     containerElement.replaceChildren(table);
 }

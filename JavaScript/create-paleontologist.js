@@ -26,7 +26,7 @@
         })
           .then(paleontologist => {
             setStatus('RENDERING TABLE');
-            renderUserTable([paleontologist], dataTable);
+            renderPaleontologistTable([paleontologist], dataTable);
             setStatus('RESPONSE RENDERED INTO TABLE');
         })
           .catch(error => {

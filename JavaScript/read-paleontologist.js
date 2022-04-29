@@ -2,7 +2,7 @@
     const requestSelector = document.querySelector('#method');
     const dataTable = document.querySelector('#data-table');
     const dataForm = document.querySelector('#data-form');
-    const userIdField = document.querySelector('#paleontologist-id-field');
+    const paleontolgistIdField = document.querySelector('#paleontologist-id-field');
     const id = document.querySelector('#paleontologist_id');
 
     function toggleIdVisibility(isVisible) {
@@ -23,9 +23,9 @@
             if (response.ok) return response.json();
             else throw new Error('Error');
         })
-          .then(users => {
+          .then(paleontologists => {
             setStatus('RENDERING TABLE');
-            renderUserTable(paleontologists, dataTable);
+            renderPaleontologistTable(paleontologists, dataTable);
             setStatus('RESPONSE RENDERED INTO TABLE');
         })
           .catch(error => {
@@ -46,7 +46,7 @@
         })
           .then(paleontologist => {
             setStatus('RENDERING TABLE');
-            renderUserTable([paleontologist], dataTable);
+            renderPaleontologistTable([paleontologist], dataTable);
             setStatus('RESPONSE RENDERED INTO TABLE');
         })
           .catch(error => {
